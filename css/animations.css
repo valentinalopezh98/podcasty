@@ -1,0 +1,130 @@
+@keyframes fade {
+    from  {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+@keyframes slide-up{
+   from  {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}  
+  
+@keyframes slide-left {
+    from  {
+         transform: translateX(100px);
+     }
+     to {
+         transform: translateX(0);
+     }
+} 
+
+@keyframes slide-right {
+    from  {
+         transform: translateX(-100px);
+     }
+     to {
+         transform: translateX(0);
+     }
+} 
+
+@keyframes slide-down {
+    from  {
+         transform: translateY(-100px);
+     }
+     to {
+         transform: translateY(0);
+     }
+} 
+
+.hero__left--title{
+    animation: fade 1s ease-in, slide-up 0.7s ease-in;
+}
+
+.hero__left--paragraph{
+    animation: fade 1s ease-in, slide-up 0.8s ease-in;
+}
+
+.hero__left--start {
+    animation: fade 1s ease-in, slide-up 0.9s ease-in;
+}
+
+.left img:nth-child(1) {
+    animation: fade 1s ease-in, slide-right 0.8s ease-in;
+}
+
+.left img:nth-child(2) {
+    animation: fade 1s ease-in, slide-right 0.9s ease-in;
+}
+
+.left img:nth-child(3) {
+    animation: fade 1s ease-in, slide-up 0.9s ease-in;
+}
+
+.right img:nth-child(1) {
+    animation: fade 1s ease-in, slide-down 0.9s ease-in;
+}
+
+.right img:nth-child(2) {
+    animation: fade 1s ease-in, slide-left 0.8s ease-in;
+}
+
+.navbar__list--hover::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--gray);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
+} 
+
+.navbar__list--hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: var(--gray);
+}
+
+.sources {
+    animation: fade 1s ease-in;
+}
+
+.explore__card:hover {
+    transform: scale(1.02);
+    transition: all 0.1s ease-in;
+}
+
+.button-white:hover {
+    border: 1px solid var(--light-gray);
+    color: var(--light-gray);
+    transform: scale(1.02);
+    transition: all 0.15s ease-in;
+}
+
+.button-black:hover{
+    text-decoration: none;
+    background-color: var(--gray);
+    transform: scale(1.02);
+    transition: all 0.15s ease-in;
+}
+
+.plan-button:hover {
+    background-color: var(--gray);
+    transform: scale(1.02);
+    transition: all 0.15s ease-in;
+}
+
+.submit-button:hover {
+    background-color: var(--gray);
+    transform: scale(1.02);
+    transition: all 0.15s ease-in;
+}

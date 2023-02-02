@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>podcasty.</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="./img/logo4.png"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__title">
+            <a href="index.html"><img src="./img/logo4.png" alt="podcasty logo">podcasty.</a>
+        </div>
+
+        <nav class="header__navbar navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars fa-2xl"></i></label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="navbar__list">
+                <li><a href="index.html" class="navbar__list--hover">Inicio</a></li>
+                <li><a href="#nosotros" class="navbar__list--hover">Nosotros</a></li>
+                <li><a href="#podcasts" class="navbar__list--hover">Podcasts</a></li>
+                <li><a href="#planes" class="navbar__list--hover">Planes</a></li>
+                <li><a href="#contacto" class="navbar__list--hover">Contacto</a></li>
+                <li><a href="signup.html" class="navbar__list--hover mobile">Registrarse</a></li>
+                <li><a href="login.html" class="navbar__list--hover mobile">Iniciar sesion</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__account">
+            <a href="signup.html" class="button button-white">Regristrarse</a>
+            <a href="login.html" class="button button-black">Iniciar sesión</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="hero">
+            <div class="hero__left">
+                <h1 class="hero__left--title">Encuentra y escucha tus <span class="hero__title--highlight">podcasts</span> favoritos!</h1>
+                <p class="hero__left--paragraph">Descubre y escucha todos los episodios que quieras en un solo lugar y mejora el alcance de tu propio podcast.</p>
+                <div class="hero__left--start">
+                    <a href="signup.html" class="button button-black">Comienza ahora</a>
+                    <a href="#podcasts" class="hero-explore">🚀 Explora</a>
+                </div>
+            </div>
+
+            <div class="hero__right">
+
+                <div class="left">
+                    <img src="./img/hero1.png" alt="">
+                    <img src="./img/hero3.png" alt="">
+                    <img src="./img/hero4.png" alt="">
+                </div>
+
+                <div class="right">
+                    <img src="./img/hero5.png" alt="">
+                    <img src="./img/hero2.png" alt="">
+                </div>
+    
+            </div>
+        </div>
+
+        <section class="sources">
+            <picture>
+                <source media="(max-width:680px)" srcset="/img/logo-youtube-mobile.png">
+                <img src="./img/logo-youtube-desktop.png" alt="fuente youtube">
+            </picture>
+
+            <picture>
+                <source media="(max-width:680px)" srcset="/img/logo-facebook-mobile.png">
+                <img src="./img/logo-facebook-desktop.png" alt="fuente facebook">
+            </picture>
+
+            <picture>
+                <source media="(max-width:680px)" srcset="/img/logo-google-mobile.png">
+                <img src="./img/logo-google-desktop.png" alt="fuente google">
+            </picture>
+
+            <picture>
+                <source media="(max-width:680px)" srcset="/img/logo-webflow-mobile.png">
+                <img src="./img/logo-webflow-desktop.png" alt="fuente webflow">
+            </picture>
+
+            <picture>
+                <source media="(max-width:680px)" srcset="/img/logo-discord-mobile.png">
+                <img src="./img/logo-discord-desktop.png" alt="fuente discord">
+            </picture>
+
+            <picture>
+                <source media="(max-width:680px)" srcset="/img/logo-spotify-mobile.png">
+                <img src="./img/logo-spotify-desktop.png" alt="fuente spotify">
+            </picture>
+        </section>
+
+        <section class="about-us" id="nosotros">
+            <h2>¿Por qué elegirnos?</h2>
+            <div class="cards">
+                <div class="card card1">
+                    <span class="material-icons benefits">download_for_offline</span>
+                    <h3>Escucha donde quieras</h3>
+                    <p>Descarga tus episodios favoritos y escuchalos donde y cuando quieras</p>
+                </div>
+                <div class="card card2">
+                    <span class="material-icons benefits">podcasts</span>                    
+                    <h3>Contenido ilimitado</h3>
+                    <p>Disfruta de la gran cantidad de contenido de varias plataformas que te facilitamos en un mismo lugar</p>
+                </div>
+                <div class="card card3">
+                    <span class="material-icons benefits">mic</span>                    
+                    <h3>Crea tu podcast</h3>
+                    <p>Distribuya su podcast a las aplicaciones de escucha más populares con solo un toque completamente gratis</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore" id="podcasts">
+            <h2>Explora</h2>
+            <div class="explore__categories">
+
+                <ul class="explore__categories--list">
+                    <li><a href="#">Todos</a></li>
+                    <li><a href="#">Entretenimiento</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Educacion</a></li>
+                    <li><a href="#">Tecnologia</a></li>
+                </ul>
+                <a href="#" class="view-more">Ver mas <span class="material-icons">expand_more</span></a>
+                
+            </div>
+
+            <div class="explore__cards">
+                <div class="explore__card">
+                    <div class="podcast-portada">
+                        <img src="./img/podcast1.jpg" alt="Portada del podcast">
+                    </div>
+               
+                    <h4>Caja Negra</h4>
+                    <p>Filo.News</p>
+                    <div class="podcast-info">
+                        <p>56 episodios</p>
+                        <div class="save-like">
+                            <div class="like-section">
+                                <span class="material-icons like-icon">
+                                    favorite_border
+                                </span>
+    
+                                <span class="material-icons liked">
+                                    favorite
+                                </span>    
+                            </div>
+                            
+                            <div class="save-section">
+                                <span class="material-icons save-icon">
+                                    bookmark_border
+                                </span>
+    
+                                <span class="material-icons saved">
+                                    bookmark
+                                </span>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="explore__card">
+                    <div class="podcast-portada">
+                        <img src="./img/podcast2.jpg" alt="Portada del podcast">
+                    </div>
+               
+                    <h4>Caso 63</h4>
+                    <p>Spotify Studios</p>
+                    <div class="podcast-info">
+                        <p>25 episodios</p>
+                        <div class="save-like">
+                            <div class="like-section">
+                                <span class="material-icons like-icon">
+                                    favorite_border
+                                </span>
+    
+                                <span class="material-icons liked">
+                                    favorite
+                                </span>    
+                            </div>
+                            
+                            <div class="save-section">
+                                <span class="material-icons save-icon">
+                                    bookmark_border
+                                </span>
+    
+                                <span class="material-icons saved">
+                                    bookmark
+                                </span>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="explore__card">
+                    <div class="podcast-portada">
+                        <img src="./img/podcast3.jpg" alt="Portada del podcast">
+                    </div>
+               
+                    <h4>Che Netflix</h4>
+                    <p>Netflix Argentina</p>
+                    <div class="podcast-info">
+                        <p>12 episodios</p>
+                        <div class="save-like">
+                            <div class="like-section">
+                                <span class="material-icons like-icon">
+                                    favorite_border
+                                </span>
+    
+                                <span class="material-icons liked">
+                                    favorite
+                                </span>    
+                            </div>
+                            
+                            <div class="save-section">
+                                <span class="material-icons save-icon">
+                                    bookmark_border
+                                </span>
+    
+                                <span class="material-icons saved">
+                                    bookmark
+                                </span>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="explore__card">
+                    <div class="podcast-portada">
+                        <img src="./img/podcast4.jpg" alt="Portada del podcast">
+                    </div>
+               
+                    <h4>Basta Chicos: La vida de Ricardo Fort</h4>
+                    <p>Spotify Studios</p>
+                    <div class="podcast-info">
+                        <p>10 episodios</p>
+                        <div class="save-like">
+                            <div class="like-section">
+                                <span class="material-icons like-icon">
+                                    favorite_border
+                                </span>
+    
+                                <span class="material-icons liked">
+                                    favorite
+                                </span>    
+                            </div>
+                            
+                            <div class="save-section">
+                                <span class="material-icons save-icon">
+                                    bookmark_border
+                                </span>
+    
+                                <span class="material-icons saved">
+                                    bookmark
+                                </span>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="explore__card">
+                    <div class="podcast-portada">
+                        <img src="./img/podcast5.jpg" alt="Portada del podcast">
+                    </div>
+               
+                    <h4>TED en Español</h4>
+                    <p>TED</p>
+                    <div class="podcast-info">
+                        <p>150 episodios</p>
+                        <div class="save-like">
+                            <div class="like-section">
+                                <span class="material-icons like-icon">
+                                    favorite_border
+                                </span>
+    
+                                <span class="material-icons liked">
+                                    favorite
+                                </span>    
+                            </div>
+                            
+                            <div class="save-section">
+                                <span class="material-icons save-icon">
+                                    bookmark_border
+                                </span>
+    
+                                <span class="material-icons saved">
+                                    bookmark
+                                </span>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="explore__card">
+                    <div class="podcast-portada">
+                        <img src="./img/podcast6.jpg" alt="Portada del podcast">
+                    </div>
+               
+                    <h4>Ologies</h4>
+                    <p>Alie Ward</p>
+                    <div class="podcast-info">
+                        <p>102 episodios</p>
+                        <div class="save-like">
+                            <div class="like-section">
+                                <span class="material-icons like-icon">
+                                    favorite_border
+                                </span>
+    
+                                <span class="material-icons liked">
+                                    favorite
+                                </span>    
+                            </div>
+                            
+                            <div class="save-section">
+                                <span class="material-icons save-icon">
+                                    bookmark_border
+                                </span>
+    
+                                <span class="material-icons saved">
+                                    bookmark
+                                </span>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="explore__card">
+                    <div class="podcast-portada">
+                        <img src="./img/podcast7.png" alt="Portada del podcast">
+                    </div>
+               
+                    <h4>99% Invisible</h4>
+                    <p>Roman Mars</p>
+                    <div class="podcast-info">
+                        <p>521 episodios</p>
+                        <div class="save-like">
+                            <div class="like-section">
+                                <span class="material-icons like-icon">
+                                    favorite_border
+                                </span>
+    
+                                <span class="material-icons liked">
+                                    favorite
+                                </span>    
+                            </div>
+                            
+                            <div class="save-section">
+                                <span class="material-icons save-icon">
+                                    bookmark_border
+                                </span>
+    
+                                <span class="material-icons saved">
+                                    bookmark
+                                </span>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="explore__card">
+                    <div class="podcast-portada">
+                        <img src="./img/podcast8.jpeg" alt="Portada del podcast">
+                    </div>
+               
+                    <h4>Imagined Life</h4>
+                    <p>Wondery</p>
+                    <div class="podcast-info">
+                        <p>65 episodios</p>
+                        <div class="save-like">
+                            <div class="like-section">
+                                <span class="material-icons like-icon">
+                                    favorite_border
+                                </span>
+    
+                                <span class="material-icons liked">
+                                    favorite
+                                </span>    
+                            </div>
+                            
+                            <div class="save-section">
+                                <span class="material-icons save-icon">
+                                    bookmark_border
+                                </span>
+    
+                                <span class="material-icons saved">
+                                    bookmark
+                                </span>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                </div>
+
+             
+            </div>
+
+            <div class="page-number">
+                    <a href="#">
+                        <span class="material-icons left-arrow">
+                        arrow_back
+                        </span>
+                    </a>
+                
+                <a href="#" class="actual-page">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+
+                <a href="#">
+                    <span class="material-icons right-arrow">
+                        arrow_forward
+                    </span>
+                </a>
+                 
+            </div>
+       </section>
+
+       <section class="prices" id="planes">
+            <h2>Planes</h2>
+            <div class="prices__cards">
+                <div class="price-card price1">
+
+                    <h4 class="plan-title">Básico</h4>
+
+                    <div class="plan-price">
+                        <p>Gratis</p>
+                    </div>
+             
+                    <div class="beneficios">
+                        <p><span class="material-icons">check_circle_outline</span> Acceso a todos los podcasts</p>
+                        <p><span class="material-icons">check_circle_outline</span> Sube tu propio podcast</p>
+                        <p><span class="material-icons">check_circle_outline</span> Guarda tus episodios y programas favoritos</p>
+                    </div>
+
+                    <button class="plan-button">
+                        Obtener
+                    </button>
+
+                </div>
+
+                <div class="price-card price2">
+
+                    <h4 class="plan-title">General</h4>
+
+                    <div class="plan-price">
+                        <p>$250</p>
+                        <p>Mensual</p>
+                    </div>
+             
+                    <div class="beneficios">
+
+                        <p><span class="material-icons">check_circle_outline</span> Todos los beneficios del plan Básico</p>
+                        <p><span class="material-icons">check_circle_outline</span> Escucha sin publicidad</p>
+                        <p><span class="material-icons">check_circle_outline</span> Descarga episodios para escuchar cuando quieras</p>
+                    
+                    </div>
+
+                    <button class="plan-button">
+                        Obtener
+                    </button>
+
+                </div>
+
+                <div class="price-card price3">
+
+                    <h4 class="plan-title">Familiar</h4>
+
+                    <div class="plan-price">
+                        <p>$700</p>
+                        <p>Mensual</p>
+                    </div>
+             
+                    <div class="beneficios">
+
+                        <p><span class="material-icons">check_circle_outline</span> Todos los beneficios del plan General</p>
+                        <p><span class="material-icons">check_circle_outline</span> Acceso hasta 5 cuentas para poder disfrutar con toda tu familia</p>
+                    
+                    </div>
+
+                    <button class="plan-button">
+                        Obtener
+                    </button>
+
+                </div>        
+
+            </div>
+  
+       </section>
+
+       <section class="contact" id="contacto">
+            <div class="contact-left">
+                <h2 class="contact-title">Contactanos</h2>
+                <p class="contact-info">
+                    Direccion de correo: 33852 Connelly Brooks Apt. 732
+                    <br> Telefono: +1-631-688-7800
+                </p>
+
+                <div class="contact-redes">
+                    <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g fa-xl"></i></a> 
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <p>Ante cualquier problema no dudes en consultarnos!</p>
+                <form action="" id="contact-form">
+                    <label for="name">
+                        <input type="text" id="name" placeholder="Ingrese su nombre">
+                    </label>
+
+                    <label for="email">
+                        <input type="email" id="email" placeholder="Ingrese su direccion de correo electronico">
+                    </label>
+
+                    <textarea name="comentarios" form="contact-right" cols="50" rows="4">Ingrese su consulta aqui...</textarea>
+
+                    <input type="submit" class="submit-button">
+                </form>
+            </div>
+       </section>
+
+       <footer>
+        <div class="footer-top">
+            <div class="footer-left">
+                <a href="index.html"><img src="./img/logo4.png" alt="podcasty logo">podcasty.</a>
+                <div class="footer-redes">
+                    <a href="#"><i class="fa-brands fa-facebook fa-sm"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-sm"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-sm"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g fa-sm"></i></a> 
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="header__navbar navbar">
+                    <ul class="navbar__list footer-navbar">
+                        <li><a href="index.html" class="navbar__list--hover">Inicio</a></li>
+                        <li><a href="#nosotros" class="navbar__list--hover">Nosotros</a></li>
+                        <li><a href="#podcasts" class="navbar__list--hover">Podcasts</a></li>
+                        <li><a href="#planes" class="navbar__list--hover">Planes</a></li>
+                        <li><a href="#contacto" class="navbar__list--hover">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            
+        <div class="footer-bottom">
+            <p>Copyright © 2023 - Podcasty - Todos los derechos reservados.</p>
+        </div>
+       </footer>
+    </main>
+</body>
+</html>
