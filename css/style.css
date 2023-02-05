@@ -17,6 +17,7 @@
     box-sizing: border-box;
 }
 
+
 a{
     text-decoration: none;
     color: black;
@@ -69,6 +70,11 @@ body::-webkit-scrollbar-thumb {
     height: 25px;
  }
 
+ 
+.navbar{
+    display: flex;
+}
+
 .navbar i {
     display: none;
 }
@@ -112,11 +118,11 @@ body::-webkit-scrollbar-thumb {
 /* Main */
 
 .main {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
     margin-top: 60px;
 }
 
